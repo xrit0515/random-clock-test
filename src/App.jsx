@@ -34,13 +34,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-blue-50 flex flex-col items-center justify-center p-4">
-      <div className="bg-white rounded-lg shadow-2xl p-8 max-w-md w-full">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
-          Clock Reading Test
-        </h1>
-
+      <div className="bg-white rounded-lg shadow-2xl p-6 max-w-md w-full md:max-w-lg">
         {/* Clock */}
-        <div className="mb-8">
+        <div className="mb-6 flex justify-center">
           <Clock hours={time.hours} minutes={time.minutes} showNumbers={showNumbers} />
         </div>
 
@@ -88,17 +84,6 @@ export default function App() {
           >
             {showNumbers ? 'Hide Numbers' : 'Show Numbers'}
           </button>
-        </div>
-
-        {/* Instructions */}
-        <div className="mt-6 text-sm text-gray-600 text-center">
-          <p className="mb-2">📌 Instructions:</p>
-          <ul className="text-left space-y-1">
-            <li>• Read the clock time shown</li>
-            <li>• Times shown in 5-minute intervals</li>
-            <li>• Click "Show Answer" to check</li>
-            <li>• Click "Next Question" for a new clock</li>
-          </ul>
         </div>
       </div>
     </div>
